@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/drawable_round_background"
+        android:orientation="vertical"
+        android:layout_below="@+id/image_alert"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/alert_dialog_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="7dp"
+            android:layout_marginTop="30dp"
+            android:text="Alert"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            tools:text="title" />
+
+        <TextView
+            android:id="@+id/alert_dialog_content_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textColor"
+            android:text="DO u want to lo"
+            android:textSize="16sp"
+            tools:text="Dialog content goes  here." />
+
+        <Button
+            android:id="@+id/positive_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_background_selector_login_button"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_alert"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_error_alert"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@null"/>
+</FrameLayout>
